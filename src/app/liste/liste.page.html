@@ -1,0 +1,20 @@
+<ion-content>
+  <fieldset>
+    <ion-label>Note :</ion-label>
+    <ion-item>
+      <ion-input id="name" inputmode="text" placeholder="Nom Prénom" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input id="result" inputmode="numeric" placeholder="Résultat" required></ion-input>
+    </ion-item>
+    <ion-button color="danger" fill="outline" id="clear" (click)="clearList()">X clear</ion-button>
+    <ion-button id="add" (click)="addItem()">+ add</ion-button>
+  </fieldset>
+</ion-content>
+<ion-content>
+  <ul>
+    <li *ngFor="let item of itemList">
+      {{ item.name }} - {{ item.result }}/20
+    </li>
+  </ul>
+</ion-content>
