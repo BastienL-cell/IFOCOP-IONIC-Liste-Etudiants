@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ajouter un étudiant</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button>
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fieldset>
+    <ion-item>
+      <ion-input id="name" inputmode="text" placeholder="Nom Prénom" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input id="result" inputmode="numeric" placeholder="Résultat" required></ion-input>
+    </ion-item>
+    <ion-button id="add" (click)="etudiantService.ajoutEtudiant()">+ add</ion-button>
+  </ion-fieldset>
+</ion-content>

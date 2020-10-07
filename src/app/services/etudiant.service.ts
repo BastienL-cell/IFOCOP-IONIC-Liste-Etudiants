@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +15,9 @@ export class EtudiantService {
   name_tmp: string;
   result_tmp: number;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  addItem() {
+  ajoutEtudiant() {
     this.name_tmp = (<HTMLInputElement>document.querySelector('#name')).value;
     this.result_tmp = +(<HTMLInputElement>document.querySelector('#result')).value;
 
@@ -31,6 +32,8 @@ export class EtudiantService {
     } else {
       alert('Erreur dans la saisie des champs. Le nom et le prénom doivent être des chaînes de caractères et le résultat un nombre compris entre 0 et 20');
     }
+
+    this.router.navigate(['/home']); 
   }
 
   clearList() {
