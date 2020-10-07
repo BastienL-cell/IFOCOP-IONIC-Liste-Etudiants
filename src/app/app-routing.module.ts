@@ -16,12 +16,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'add-item',
+    path: 'addItem',
     loadChildren: () => import('./pages/add-item/add-item.module').then( m => m.AddItemPageModule)
   },
   {
-    path: 'modify-item',
-    loadChildren: () => import('./modify-item/modify-item.module').then( m => m.ModifyItemPageModule)
+    path: 'modifyItem/:id',
+    loadChildren: () => import('./pages/modify-item/modify-item.module').then( m => m.ModifyItemPageModule)
   }
 ];
 

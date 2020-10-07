@@ -23,3 +23,4 @@ import { EtudiantService } from './services/etudiant.service';
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+

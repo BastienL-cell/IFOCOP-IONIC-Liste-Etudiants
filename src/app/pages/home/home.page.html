@@ -24,7 +24,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let etd of etudiants" routerLink="modifyItem">
+      <tr *ngFor="let etd of etudiants" routerLink="modifyItem/{{etd.id}}">
         <td>{{ etd.name }} </td>
         <td>{{ etd.result }}</td>
       </tr>
