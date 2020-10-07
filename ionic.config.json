@@ -1,5 +1,7 @@
 {
   "name": "list-note-etudiants",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

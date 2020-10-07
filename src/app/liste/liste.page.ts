@@ -39,6 +39,7 @@ export class ListePage implements OnInit {
   }
 
   clearList() {
+    this.itemList = [];
   }
 
 }
