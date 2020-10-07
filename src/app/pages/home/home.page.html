@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste des étudiants</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/additem']">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ul>
+    <li *ngFor="let etd of etudiants">
+      {{ etd.name }} - {{ etd.result }}/20
+    </li>
+  </ul>
+</ion-content>
