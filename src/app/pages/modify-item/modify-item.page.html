@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modifier un étudiant</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button>
+        <ion-icon slot="icon-only"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fieldset>
+    <ion-item>
+      <ion-input id="name" inputmode="text" placeholder="Nom Prénom" value="{{name}}" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input id="result" inputmode="numeric" placeholder="Résultat" value="{{result}}" required></ion-input>
+    </ion-item>
+    <ion-button id="add" (click)="etudiantService.updateEtudiant(id)">Modify</ion-button>
+  </ion-fieldset>
+</ion-content>
