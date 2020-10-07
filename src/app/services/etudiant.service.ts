@@ -35,10 +35,10 @@ export class EtudiantService {
           result: this.result_tmp
         });
         this.clear();
+        this.returnHome();
     } else {
       alert('Erreur dans la saisie des champs. Le nom et le prénom doivent être des chaînes de caractères et le résultat un nombre compris entre 0 et 20');
     }
-    this.returnHome();
   }
     // Redirection vers la page d'accueil
   returnHome() {
